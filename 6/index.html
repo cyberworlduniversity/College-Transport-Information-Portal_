@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>College Transport Information Portal</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="logo-area">
+            <div class="logo-icon">🚌</div>
+
+            <div>
+                <h1>CampusRide</h1>
+                <p>College Transport Portal</p>
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#routes">Bus Routes</a>
+            <a href="#pickup">Pickup Points</a>
+            <a href="#timings">Timings</a>
+            <a href="#search">Search</a>
+        </nav>
+
+        <button class="menu-btn" id="menuBtn">
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+
+        <!-- ================= HERO / HOME ================= -->
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <span class="hero-tag">
+                    🚍 SMART CAMPUS TRANSPORT
+                </span>
+
+                <h2>
+                    Your Journey to
+                    <span>Campus</span>,
+                    Made Simple.
+                </h2>
+
+                <p>
+                    Find college bus routes, pickup points and timings
+                    quickly from one simple transportation portal.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#routes" class="primary-btn">
+                        Explore Bus Routes →
+                    </a>
+
+                    <a href="#search" class="secondary-btn">
+                        🔍 Find Your Bus
+                    </a>
+                </div>
+
+            </div>
+
+
+            <!-- Hero Visual -->
+
+            <div class="hero-visual">
+
+                <div class="bus-card">
+
+                    <div class="bus-card-top">
+                        <span class="status-dot"></span>
+                        <span>LIVE ROUTE</span>
+                    </div>
+
+                    <div class="bus-icon-large">
+                        🚌
+                    </div>
+
+                    <h3>Campus Express</h3>
+
+                    <p>
+                        Safe • Reliable • Convenient
+                    </p>
+
+                    <div class="route-line">
+                        <span>Pickup</span>
+                        <span class="line"></span>
+                        <span>College</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= STATISTICS ================= -->
+
+        <section class="stats-section">
+
+            <div class="stat-card">
+                <div class="stat-icon">🚌</div>
+                <div>
+                    <strong>25</strong>
+                    <span>Bus Routes</span>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">📍</div>
+                <div>
+                    <strong>75+</strong>
+                    <span>Pickup Points</span>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">⏰</div>
+                <div>
+                    <strong>06:30 AM</strong>
+                    <span>First Bus</span>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">🎓</div>
+                <div>
+                    <strong>Daily</strong>
+                    <span>Campus Service</span>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- ================= SEARCH ================= -->
+
+        <section class="search-section" id="search">
+
+            <div class="section-heading">
+
+                <span>QUICK SEARCH</span>
+
+                <h2>
+                    Find Your <span>Bus</span>
+                </h2>
+
+                <p>
+                    Search by bus number, route, pickup point or timing.
+                </p>
+
+            </div>
+
+
+            <div class="search-box">
+
+                <div class="search-input-wrapper">
+
+                    <span>🔍</span>
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Search bus number, route or pickup point..."
+                    >
+
+                </div>
+
+                <button id="searchBtn" class="search-btn">
+                    Search
+                </button>
+
+            </div>
+
+            <div id="searchResult" class="search-result"></div>
+
+        </section>
+
+
+        <!-- ================= BUS ROUTES ================= -->
+
+        <section class="routes-section" id="routes">
+
+            <div class="section-heading">
+
+                <span>TRANSPORT NETWORK</span>
+
+                <h2>
+                    College <span>Bus Routes</span>
+                </h2>
+
+                <p>
+                    Explore the available transportation routes.
+                </p>
+
+            </div>
+
+
+            <div class="route-grid" id="routeGrid">
+
+
+                <!-- BUS 01 -->
+
+                <article class="route-card">
+
+                    <div class="route-header">
+                        <span class="bus-number">BUS 01</span>
+                        <span class="available">● Available</span>
+                    </div>
+
+                    <div class="route-icon">🚌</div>
+
+                    <h3>Tirunelveli → College</h3>
+
+                    <p class="route-description">
+                        Main city route through important student pickup areas.
+                    </p>
+
+                    <div class="route-details">
+                        <span>📍 Tirunelveli</span>
+                        <span>⏰ 07:00 AM</span>
+                    </div>
+
+                </article>
+
+
+                <!-- BUS 02 -->
+
+                <article class="route-card">
+
+                    <div class="route-header">
+                        <span class="bus-number">BUS 02</span>
+                        <span class="available">● Available</span>
+                    </div>
+
+                    <div class="route-icon">🚌</div>
+
+                    <h3>Palayamkottai → College</h3>
+
+                    <p class="route-description">
+                        Connects Palayamkottai with the college campus.
+                    </p>
+
+                    <div class="route-details">
+                        <span>📍 Palayamkottai</span>
+                        <span>⏰ 07:05 AM</span>
+                    </div>
+
+                </article>
+
+
+                <!-- BUS 03 -->
+
+                <article class="route-card">
+
+                    <div class="route-header">
+                        <span class="bus-number">BUS 03</span>
+                        <span class="available">● Available</span>
+                    </div>
+
+                    <div class="route-icon">🚌</div>
+
+                    <h3>Melapalayam → College</h3>
+
+                    <p class="route-description">
+                        Morning and evening service for students.
+                    </p>
+
+                    <div class="route-details">
+                        <span>📍 Melapalayam</span>
+                        <span>⏰ 07:10 AM</span>
+                    </div>
+
+                </article>
+
+
+                <!-- BUS 04 -->
+
+                <article class="route-card">
+
+                    <div class="route-header">
+                        <span class="bus-number">BUS 04</span>
+                        <span class="available">● Available</span>
+                    </div>
+
+                    <div class="route-icon">🚌</div>
+
+                    <h3>Vannarpettai → College</h3>
+
+                    <p class="route-description">
+                        Convenient route covering central pickup locations.
+                    </p>
+
+                    <div class="route-details">
+                        <span>📍 Vannarpettai</span>
+                        <span>⏰ 07:15 AM</span>
+                    </div>
+
+                </article>
+
+
+                <!-- BUS 05 -->
+
+                <article class="route-card">
+
+                    <div class="route-header">
+                        <span class="bus-number">BUS 05</span>
+                        <span class="available">● Available</span>
+                    </div>
+
+                    <div class="route-icon">🚌</div>
+
+                    <h3>Thachanallur → College</h3>
+
+                    <p class="route-description">
+                        Dedicated student transport route.
+                    </p>
+
+                    <div class="route-details">
+                        <span>📍 Thachanallur</span>
+                        <span>⏰ 07:20 AM</span>
+                    </div>
+
+                </article>
+
+
+                <!-- BUS 06 -->
+
+                <article class="route-card">
+
+                    <div class="route-header">
+                        <span class="bus-number">BUS 06</span>
+                        <span class="available">● Available</span>
+                    </div>
+
+                    <div class="route-icon">🚌</div>
+
+                    <h3>Reddiarpatti → College</h3>
+
+                    <p class="route-description">
+                        Regular campus transportation service.
+                    </p>
+
+                    <div class="route-details">
+                        <span>📍 Reddiarpatti</span>
+                        <span>⏰ 07:25 AM</span>
+                    </div>
+
+                </article>
+
+
+                <!-- BUS 07 -->
+
+                <article class="route-card">
+
+                    <div class="route-header">
+                        <span class="bus-number">BUS 07</span>
+                        <span class="available">● Available</span>
+                    </div>
+
+                    <div class="route-icon">🚌</div>
+
+                    <h3>Sankar Nagar → College</h3>
+
+                    <p class="route-description">
+                        Direct transportation for nearby students.
+                    </p>
+
+                    <div class="route-details">
+                        <span>📍 Sankar Nagar</span>
+                        <span>⏰ 07:30 AM</span>
+                    </div>
+
+                </article>
+
+
+                <!-- BUS 08 -->
+
+                <article class="route-card">
+
+                    <div class="route-header">
+                        <span class="bus-number">BUS 08</span>
+                        <span class="available">● Available</span>
+                    </div>
+
+                    <div class="route-icon">🚌</div>
+
+                    <h3>Gangaikondan → College</h3>
+
+                    <p class="route-description">
+                        Morning campus route for students.
+                    </p>
+
+                    <div class="route-details">
+                        <span>📍 Gangaikondan</span>
+                        <span>⏰ 07:35 AM</span>
+                    </div>
+
+                </article>
+
+
+                <!-- BUS 09 -->
+
+                <article class="route-card">
+
+                    <div class="route-header">
+                        <span class="bus-number">BUS 09</span>
+                        <span class="available">● Available</span>
+                    </div>
+
+                    <div class="route-icon">🚌</div>
+
+                    <h3>Kayalpatnam → College</h3>
+
+                    <p class="route-description">
+                        Long-distance student transportation service.
+                    </p>
+
+                    <div class="route-details">
+                        <span>📍 Kayalpatnam</span>
+                        <span>⏰ 06:45 AM</span>
+                    </div>
+
+                </article>
+
+
+                <!-- BUS 10 -->
+
+                <article class="route-card">
+
+                    <div class="route-header">
+                        <span class="bus-number">BUS 10</span>
+                        <span class="available">● Available</span>
+                    </div>
+
+                    <div class="route-icon">🚌</div>
+
+                    <h3>Ambasamudram → College</h3>
+
+                    <p class="route-description">
+                        Student route connecting surrounding towns.
+                    </p>
+
+                    <div class="route-details">
+                        <span>📍 Ambasamudram</span>
+                        <span>⏰ 06:40 AM</span>
+                    </div>
+
+                </article>
+
+
+                <!-- BUS 11 -->
+
+                <article class="route-card">
+
+                    <div class="route-header">
+                        <span class="bus-number">BUS 11</span>
+                        <span class="available">● Available</span>
+                    </div>
+
+                    <div class="route-icon">🚌</div>
+
+                    <h3>Tenkasi → College</h3>
+
+                    <p class="route-description">
+                        Dedicated route for students from Tenkasi side.
+                    </p>
+
+                    <div class="route-details">
+                        <span>📍 Tenkasi</span>
+                        <span>⏰ 06:20 AM</span>
+                    </div>
+
+                </article>
+
+
+                <!-- BUS 12 -->
+
+                <article class="route-card">
+
+                    <div class="route-header">
+                        <span class="bus-number">BUS 12</span>
+                        <span class="available">● Available</span>
+                    </div>
+
+                    <div class="route-icon">🚌</div>
+
+                    <h3>Alangulam → College</h3>
+
+                    <p class="route-description">
+                        Regular morning transportation route.
+                    </p>
+
+                    <div class="route-details">
+                        <span>📍 Alangulam</span>
+                        <span>⏰ 06:30 AM</span>
+                    </div>
+
+                </article>
+
+
+                <!-- BUS 13 -->
+
+                <article class="route-card">
+
+                    <div class="route-header">
+                        <span class="bus-number">BUS 13</span>
+                        <span class="available">● Available</span>
+                    </div>
+
+                    <div class="route-icon">🚌</div>
+
+                    <h3>Nanguneri → College</h3>
+
+                    <p class="route-description">
+                        Student-friendly transport service.
+                    </p>
+
+                    <div class="route-details">
+                        <span>📍 Nanguneri</span>
+                        <span>⏰ 06:35 AM</span>
+                    </div>
+
+                </article>
+
+
+                <!-- BUS 14 -->
+
+                <article class="route-card">
+
+                    <div class="route-header">
+                        <span class="bus-number">BUS 14</span>
+                        <span class="available">● Available</span>
+                    </div>
+
+                    <div class="route-icon">🚌</div>
+
+                    <h3>Valliyur → College</h3>
+
+                    <p class="route-description">
+                        Reliable transport service for students.
+                    </p>
+
+                    <div class="route-details">
+                        <span>📍 Valliyur</span>
+                        <span>⏰ 06:25 AM</span>
+                    </div>
+
+                </article>
+
+
+                <!-- BUS 15 -->
+
+                <article class="route-card">
+
+                    <div class="route-header">
+                        <span class="bus-number">BUS 15</span>
+                        <span class="available">● Available</span>
+                    </div>
+
+                    <div class="route-icon">🚌</div>
+
+                    <h3>Panagudi → College</h3>
+
+                    <p class="route-description">
+                        Direct route connecting Panagudi students.
+                    </p>
+
+                    <div class="route-details">
+                        <span>📍 Panagudi</span>
+                        <span>⏰ 06:30 AM</span>
+                    </div>
+
+                </article>
+
+
+                <!-- BUS 16 -->
+
+                <article class="route-card">
+
+                    <div class="route-header">
+                        <span class="bus-number">BUS 16</span>
+                        <span class="available">● Available</span>
+                    </div>
+
+                    <div class="route-icon">🚌</div>
+
+                    <h3>Kallidaikurichi → College</h3>
+
+                    <p class="route-description">
+                        Daily transportation service.
+                    </p>
+
+                    <div class="route-details">
+                        <span>📍 Kallidaikurichi</span>
+                        <span>⏰ 06:45 AM</span>
+                    </div>
+
+                </article>
+
+
+                <!-- BUS 17 -->
+
+                <article class="route-card">
+
+                    <div class="route-header">
+                        <span class="bus-number">BUS 17</span>
+                        <span class="available">● Available</span>
+                    </div>
+
+                    <div class="route-icon">🚌</div>
+
+                    <h3>Cheranmahadevi → College</h3>
+
+                    <p class="route-description">
+                        Comfortable campus transport service.
+                    </p>
+
+                    <div class="route-details">
+                        <span>📍 Cheranmahadevi</span>
+                        <span>⏰ 06:50 AM</span>
+                    </div>
+
+                </article>
+
+
+                <!-- BUS 18 -->
+
+                <article class="route-card">
+
+                    <div class="route-header">
+                        <span class="bus-number">BUS 18</span>
+                        <span class="available">● Available</span>
+                    </div>
+
+                    <div class="route-icon">🚌</div>
+
+                    <h3>Manur → College</h3>
+
+                    <p class="route-description">
+                        Regular student transportation route.
+                    </p>
+
+                    <div class="route-details">
+                        <span>📍 Manur</span>
+                        <span>⏰ 06:55 AM</span>
+                    </div>
+
+                </article>
+
+
+                <!-- BUS 19 -->
+
+                <article class="route-card">
+
+                    <div class="route-header">
+                        <span class="bus-number">BUS 19</span>
+                        <span class="available">● Available</span>
+                    </div>
+
+                    <div class="route-icon">🚌</div>
+
+                    <h3>Kurichi → College</h3>
+
+                    <p class="route-description">
+                        Easy and convenient college bus service.
+                    </p>
+
+                    <div class="route-details">
+                        <span>📍 Kurichi</span>
+                        <span>⏰ 07:05 AM</span>
+                    </div>
+
+                </article>
+
+
+                <!-- BUS 20 -->
+
+                <article class="route-card">
+
+                    <div class="route-header">
+                        <span class="bus-number">BUS 20</span>
+                        <span class="available">● Available</span>
+                    </div>
+
+                    <div class="route-icon">🚌</div>
+
+                    <h3>Suthamalli → College</h
