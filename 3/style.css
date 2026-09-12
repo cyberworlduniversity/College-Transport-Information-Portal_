@@ -1,0 +1,628 @@
+/* =========================================
+   COLLEGE TRANSPORT INFORMATION PORTAL
+   style.css
+   ========================================= */
+
+/* ---------- GLOBAL RESET ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #172033;
+    line-height: 1.6;
+}
+
+
+/* ---------- HEADER ---------- */
+
+.header {
+    width: 100%;
+    min-height: 75px;
+    padding: 12px 6%;
+    background: #071a35;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+}
+
+.logo > span {
+    font-size: 38px;
+}
+
+.logo h1 {
+    font-size: 21px;
+    line-height: 1.2;
+}
+
+.logo p {
+    font-size: 12px;
+    color: #b9c9df;
+}
+
+.navbar {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 9px 13px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background: #1677ff;
+}
+
+
+/* ---------- HERO SECTION ---------- */
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 70px 8%;
+    background:
+        linear-gradient(
+            120deg,
+            #071a35,
+            #0c3870,
+            #1467c4
+        );
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    border: 70px solid rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    right: -150px;
+    top: -100px;
+}
+
+.hero-content {
+    max-width: 700px;
+    position: relative;
+    z-index: 1;
+}
+
+.welcome {
+    color: #8ed1ff;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: clamp(38px, 6vw, 68px);
+    line-height: 1.05;
+    margin-bottom: 20px;
+}
+
+.hero-content > p:not(.welcome) {
+    color: #dbeafe;
+    font-size: 17px;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.hero button,
+.interaction-box button,
+.search-box button {
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero button {
+    background: white;
+    color: #0753a6;
+    padding: 13px 22px;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+.hero button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ---------- DASHBOARD ---------- */
+
+.dashboard {
+    width: 86%;
+    margin: -50px auto 50px;
+    position: relative;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.dashboard-card {
+    background: white;
+    padding: 25px 15px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-7px);
+}
+
+.card-icon {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.dashboard-card h3 {
+    font-size: 25px;
+    color: #0753a6;
+}
+
+.dashboard-card p {
+    color: #697386;
+    font-size: 14px;
+}
+
+
+/* ---------- COMMON SECTION ---------- */
+
+.section {
+    width: 88%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-heading p {
+    color: #1677ff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    font-size: 38px;
+    color: #071a35;
+    margin: 5px 0;
+}
+
+.section-heading span {
+    color: #6b7280;
+}
+
+
+/* ---------- BUS CARDS ---------- */
+
+.bus-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.bus-card {
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    border-left: 5px solid #1677ff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+    transition: 0.3s;
+}
+
+.bus-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.bus-number {
+    display: inline-block;
+    background: #e7f1ff;
+    color: #0753a6;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.bus-card h3 {
+    font-size: 19px;
+    color: #13294b;
+    margin-bottom: 12px;
+}
+
+.bus-card p {
+    color: #667085;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.bus-card strong {
+    color: #344054;
+}
+
+
+/* ---------- PICKUP SECTION ---------- */
+
+.pickup-section {
+    max-width: 100%;
+    width: 100%;
+    padding-left: 6%;
+    padding-right: 6%;
+    background: #eaf3ff;
+}
+
+.pickup-grid {
+    max-width: 1300px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.pickup-card {
+    background: white;
+    padding: 25px 18px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+    transition: 0.3s;
+}
+
+.pickup-card:hover {
+    transform: scale(1.03);
+}
+
+.pickup-card span {
+    font-size: 30px;
+}
+
+.pickup-card h3 {
+    color: #17365d;
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.pickup-card p {
+    color: #1677ff;
+    font-weight: bold;
+}
+
+
+/* ---------- TIMINGS TABLE ---------- */
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 650px;
+}
+
+th {
+    background: #071a35;
+    color: white;
+    padding: 16px;
+    text-align: left;
+    font-size: 14px;
+}
+
+td {
+    padding: 15px 16px;
+    border-bottom: 1px solid #eaecf0;
+    font-size: 14px;
+}
+
+tr:hover td {
+    background: #f5f9ff;
+}
+
+.status {
+    background: #dcfce7;
+    color: #15803d;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* ---------- SEARCH SECTION ---------- */
+
+.search-section {
+    background: #f4f7fb;
+}
+
+.search-box {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 15px 18px;
+    border: 2px solid #d0d5dd;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+    background: white;
+}
+
+.search-box input:focus {
+    border-color: #1677ff;
+}
+
+.search-box button {
+    background: #0753a6;
+    color: white;
+    padding: 0 25px;
+    border-radius: 8px;
+}
+
+.search-box button:hover {
+    background: #1677ff;
+}
+
+.search-result {
+    max-width: 800px;
+    margin: 20px auto 0;
+    padding: 18px;
+    background: white;
+    border-radius: 8px;
+    text-align: center;
+    color: #667085;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+
+/* ---------- INTERACTION SECTION ---------- */
+
+.interaction-section {
+    padding: 70px 6%;
+    background: #071a35;
+}
+
+.interaction-box {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+.interaction-box h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.interaction-box p {
+    color: #c9d7eb;
+    margin-bottom: 25px;
+}
+
+.interaction-box button {
+    padding: 12px 22px;
+    background: #1677ff;
+    color: white;
+    border-radius: 7px;
+}
+
+.interaction-box button:hover {
+    background: #4b9aff;
+    transform: translateY(-2px);
+}
+
+
+/* ---------- FOOTER ---------- */
+
+.footer {
+    background: #030d1c;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.footer h3 {
+    font-size: 19px;
+    margin-bottom: 7px;
+}
+
+.footer p {
+    color: #9aa9bd;
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+.footer-line {
+    height: 1px;
+    max-width: 600px;
+    margin: 20px auto;
+    background: #263952;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+
+/* ---------- TABLET ---------- */
+
+@media (max-width: 1000px) {
+
+    .header {
+        padding: 12px 4%;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .dashboard {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bus-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pickup-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        min-height: 450px;
+    }
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 650px) {
+
+    .header {
+        position: relative;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .logo h1 {
+        font-size: 18px;
+    }
+
+    .navbar {
+        width: 100%;
+        gap: 4px;
+    }
+
+    .navbar a {
+        font-size: 12px;
+        padding: 7px 8px;
+    }
+
+    .hero {
+        min-height: 500px;
+        padding: 55px 7%;
+    }
+
+    .hero h2 {
+        font-size: 40px;
+    }
+
+    .hero-content > p:not(.welcome) {
+        font-size: 15px;
+    }
+
+    .dashboard {
+        width: 90%;
+        margin-top: -30px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .dashboard-card {
+        padding: 18px 10px;
+    }
+
+    .section {
+        width: 90%;
+        padding: 50px 0;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .bus-container {
+        grid-template-columns: 1fr;
+    }
+
+    .pickup-section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .pickup-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box button {
+        padding: 13px;
+    }
+
+    .interaction-box h2 {
+        font-size: 27px;
+    }
+}
+
+
+/* ---------- SMALL MOBILE ---------- */
+
+@media (max-width: 400px) {
+
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h2 {
+        font-size: 34px;
+    }
+
+    .navbar a {
+        font-size: 11px;
+        padding: 6px;
+    }
+}

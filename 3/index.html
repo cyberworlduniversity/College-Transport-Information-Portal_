@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>College Transport Information Portal</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+
+        <div class="logo">
+            <span>🚌</span>
+            <div>
+                <h1>College Transport</h1>
+                <p>Information Portal</p>
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#routes">Bus Routes</a>
+            <a href="#pickup">Pickup Points</a>
+            <a href="#timings">Timings</a>
+            <a href="#search">Search</a>
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HOME / DASHBOARD ================= -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="welcome">WELCOME TO</p>
+
+            <h2>College Transport<br>Information Portal</h2>
+
+            <p>
+                Find bus routes, pickup points and transport timings
+                quickly and easily.
+            </p>
+
+            <button onclick="showWelcomeMessage()">
+                Check Transport Details
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= DASHBOARD CARDS ================= -->
+    <section class="dashboard">
+
+        <div class="dashboard-card">
+            <div class="card-icon">🚌</div>
+            <h3>25+</h3>
+            <p>Bus Routes</p>
+        </div>
+
+        <div class="dashboard-card">
+            <div class="card-icon">📍</div>
+            <h3>50+</h3>
+            <p>Pickup Points</p>
+        </div>
+
+        <div class="dashboard-card">
+            <div class="card-icon">⏰</div>
+            <h3>Daily</h3>
+            <p>Bus Timings</p>
+        </div>
+
+        <div class="dashboard-card">
+            <div class="card-icon">🔍</div>
+            <h3>Easy</h3>
+            <p>Search & Filter</p>
+        </div>
+
+    </section>
+
+
+    <!-- ================= BUS ROUTES ================= -->
+    <section id="routes" class="section">
+
+        <div class="section-heading">
+            <p>TRANSPORT INFORMATION</p>
+            <h2>Bus Routes</h2>
+            <span>Available college bus routes</span>
+        </div>
+
+
+        <div class="bus-container">
+
+            <!-- Bus 01 -->
+            <div class="bus-card">
+                <div class="bus-number">BUS 01</div>
+                <h3>Tirunelveli - College</h3>
+                <p><strong>Route:</strong> Tirunelveli → Palayamkottai → College</p>
+                <p><strong>Departure:</strong> 07:15 AM</p>
+                <p><strong>Arrival:</strong> 08:15 AM</p>
+            </div>
+
+
+            <!-- Bus 02 -->
+            <div class="bus-card">
+                <div class="bus-number">BUS 02</div>
+                <h3>Palayamkottai - College</h3>
+                <p><strong>Route:</strong> Palayamkottai → Vannarpettai → College</p>
+                <p><strong>Departure:</strong> 07:20 AM</p>
+                <p><strong>Arrival:</strong> 08:10 AM</p>
+            </div>
+
+
+            <!-- Bus 03 -->
+            <div class="bus-card">
+                <div class="bus-number">BUS 03</div>
+                <h3>Melapalayam - College</h3>
+                <p><strong>Route:</strong> Melapalayam → Junction → College</p>
+                <p><strong>Departure:</strong> 07:10 AM</p>
+                <p><strong>Arrival:</strong> 08:05 AM</p>
+            </div>
+
+
+            <!-- Bus 04 -->
+            <div class="bus-card">
+                <div class="bus-number">BUS 04</div>
+                <h3>Valliyur - College</h3>
+                <p><strong>Route:</strong> Valliyur → Nanguneri → College</p>
+                <p><strong>Departure:</strong> 06:45 AM</p>
+                <p><strong>Arrival:</strong> 08:20 AM</p>
+            </div>
+
+
+            <!-- Bus 05 -->
+            <div class="bus-card">
+                <div class="bus-number">BUS 05</div>
+                <h3>Ambasamudram - College</h3>
+                <p><strong>Route:</strong> Ambasamudram → Cheranmahadevi → College</p>
+                <p><strong>Departure:</strong> 06:40 AM</p>
+                <p><strong>Arrival:</strong> 08:15 AM</p>
+            </div>
+
+
+            <!-- Bus 06 -->
+            <div class="bus-card">
+                <div class="bus-number">BUS 06</div>
+                <h3>Shenkottai - College</h3>
+                <p><strong>Route:</strong> Shenkottai → Tenkasi → College</p>
+                <p><strong>Departure:</strong> 06:30 AM</p>
+                <p><strong>Arrival:</strong> 08:30 AM</p>
+            </div>
+
+
+            <!-- Bus 07 -->
+            <div class="bus-card">
+                <div class="bus-number">BUS 07</div>
+                <h3>Tenkasi - College</h3>
+                <p><strong>Route:</strong> Tenkasi → Alangulam → College</p>
+                <p><strong>Departure:</strong> 06:35 AM</p>
+                <p><strong>Arrival:</strong> 08:25 AM</p>
+            </div>
+
+
+            <!-- Bus 08 -->
+            <div class="bus-card">
+                <div class="bus-number">BUS 08</div>
+                <h3>Sankarankovil - College</h3>
+                <p><strong>Route:</strong> Sankarankovil → Rajapalayam → College</p>
+                <p><strong>Departure:</strong> 06:20 AM</p>
+                <p><strong>Arrival:</strong> 08:30 AM</p>
+            </div>
+
+
+            <!-- Bus 09 -->
+            <div class="bus-card">
+                <div class="bus-number">BUS 09</div>
+                <h3>Nazareth - College</h3>
+                <p><strong>Route:</strong> Nazareth → Thisayanvilai → College</p>
+                <p><strong>Departure:</strong> 06:30 AM</p>
+                <p><strong>Arrival:</strong> 08:20 AM</p>
+            </div>
+
+
+            <!-- Bus 10 -->
+            <div class="bus-card">
+                <div class="bus-number">BUS 10</div>
+                <h3>Thoothukudi - College</h3>
+                <p><strong>Route:</strong> Thoothukudi → Srivaikuntam → College</p>
+                <p><strong>Departure:</strong> 06:15 AM</p>
+                <p><strong>Arrival:</strong> 08:25 AM</p>
+            </div>
+
+
+            <!-- Bus 11 -->
+            <div class="bus-card">
+                <div class="bus-number">BUS 11</div>
+                <h3>Kovilpatti - College</h3>
+                <p><strong>Route:</strong> Kovilpatti → Kayathar → College</p>
+                <p><strong>Departure:</strong> 06:20 AM</p>
+                <p><strong>Arrival:</strong> 08:15 AM</p>
+            </div>
+
+
+            <!-- Bus 12 -->
+            <div class="bus-card">
+                <div class="bus-number">BUS 12</div>
+                <h3>Rajapalayam - College</h3>
+                <p><strong>Route:</strong> Rajapalayam → Sivakasi → College</p>
+                <p><strong>Departure:</strong> 06:10 AM</p>
+                <p><strong>Arrival:</strong> 08:30 AM</p>
+            </div>
+
+
+            <!-- Bus 13 -->
+            <div class="bus-card">
+                <div class="bus-number">BUS 13</div>
+                <h3>Sivakasi - College</h3>
+                <p><strong>Route:</strong> Sivakasi → Virudhunagar → College</p>
+                <p><strong>Departure:</strong> 06:25 AM</p>
+                <p><strong>Arrival:</strong> 08:30 AM</p>
+            </div>
+
+
+            <!-- Bus 14 -->
+            <div class="bus-card">
+                <div class="bus-number">BUS 14</div>
+                <h3>Virudhunagar - College</h3>
+                <p><strong>Route:</strong> Virudhunagar → Aruppukottai → College</p>
+                <p><strong>Departure:</strong> 06:30 AM</p>
+                <p><strong>Arrival:</strong> 08:20 AM</p>
+            </div>
+
+
+            <!-- Bus 15 -->
+            <div class="bus-card">
+                <div class="bus-number">BUS 15</div>
+                <h3>Aruppukottai - College</h3>
+                <p><strong>Route:</strong> Aruppukottai → Kariapatti → College</p>
+                <p><strong>Departure:</strong> 06:35 AM</p>
+                <p><strong>Arrival:</strong> 08:25 AM</p>
+            </div>
+
+
+            <!-- Bus 16 -->
+            <div class="bus-card">
+                <div class="bus-number">BUS 16</div>
+                <h3>Madurai - College</h3>
+                <p><strong>Route:</strong> Madurai → Virudhunagar → College</p>
+                <p><strong>Departure:</strong> 05:45 AM</p>
+                <p><strong>Arrival:</strong> 08:30 AM</p>
+            </div>
+
+
+            <!-- Bus 17 -->
+            <div class="bus-card">
+                <div class="bus-number">BUS 17</div>
+                <h3>Rajapalayam - East</h3>
+                <p><strong>Route:</strong> Rajapalayam → Sivakasi → College</p>
+                <p><strong>Departure:</strong> 06:15 AM</p>
+                <p><strong>Arrival:</strong> 08:35 AM</p>
+            </div>
+
+
+            <!-- Bus 18 -->
+            <div class="bus-card">
+                <div class="bus-number">BUS 18</div>
+                <h3>Alangulam - College</h3>
+                <p><strong>Route:</strong> Alangulam → Pavoorchatram → College</p>
+                <p><strong>Departure:</strong> 06:50 AM</p>
+                <p><strong>Arrival:</strong> 08:20 AM</p>
+            </div>
+
+
+            <!-- Bus 19 -->
+            <div class="bus-card">
+                <div class="bus-number">BUS 19</div>
+                <h3>Vikramasingapuram - College</h3>
+                <p><strong>Route:</strong> V.K.Puram → Ambasamudram → College</p>
+                <p><strong>Departure:</strong> 06:45 AM</p>
+                <p><strong>Arrival:</strong> 08:15 AM</p>
+            </div>
+
+
+            <!-- Bus 20 -->
+            <div class="bus-card">
+                <div class="bus-number">BUS 20</div>
+                <h3>Kalakad - College</h3>
+                <p><strong>Route:</strong> Kalakad → Nanguneri → College</p>
+                <p><strong>Departure:</strong> 06:40 AM</p>
+                <p><strong>Arrival:</strong> 08:20 AM</p>
+            </div>
+
+
+            <!-- Bus 21 -->
+            <div class="bus-card">
+                <div class="bus-number">BUS 21</div>
+                <h3>Panagudi - College</h3>
+                <p><strong>Route:</strong> Panagudi → Valliyur → College</p>
+                <p><strong>Departure:</strong> 06:50 AM</p>
+                <p><strong>Arrival:</strong> 08:15 AM</p>
+            </div>
+
+
+            <!-- Bus 22 -->
+            <div class="bus-card">
+                <div class="bus-number">BUS 22</div>
+                <h3>Nanguneri - College</h3>
+                <p><strong>Route:</strong> Nanguneri → Valliyur → College</p>
+                <p><strong>Departure:</strong> 06:55 AM</p>
+                <p><strong>Arrival:</strong> 08:15 AM</p>
+            </div>
+
+
+            <!-- Bus 23 -->
+            <div class="bus-card">
+                <div class="bus-number">BUS 23</div>
+                <h3>Radhapuram - College</h3>
+                <p><strong>Route:</strong> Radhapuram → Valliyur → College</p>
+                <p><strong>Departure:</strong> 06:45 AM</p>
+                <p><strong>Arrival:</strong> 08:20 AM</p>
+            </div>
+
+
+            <!-- Bus 24 -->
+            <div class="bus-card">
+                <div class="bus-number">BUS 24</div>
+                <h3>Srivaikuntam - College</h3>
+                <p><strong>Route:</strong> Srivaikuntam → Thiruchendur Road → College</p>
+                <p><strong>Departure:</strong> 06:30 AM</p>
+                <p><strong>Arrival:</strong> 08:20 AM</p>
+            </div>
+
+
+            <!-- Bus 25 -->
+            <div class="bus-card">
+                <div class="bus-number">BUS 25</div>
+                <h3>Thiruchendur - College</h3>
+                <p><strong>Route:</strong> Thiruchendur → Arumuganeri → College</p>
+                <p><strong>Departure:</strong> 06:15 AM</p>
+                <p><strong>Arrival:</strong> 08:25 AM</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PICKUP POINTS ================= -->
+    <section id="pickup" class="section pickup-section">
+
+        <div class="section-heading">
+            <p>STUDENT TRANSPORT</p>
+            <h2>Pickup Points</h2>
+            <span>Important pickup locations</span>
+        </div>
+
+
+        <div class="pickup-grid">
+
+            <div class="pickup-card">
+                <span>📍</span>
+                <h3>Tirunelveli Junction</h3>
+                <p>07:15 AM</p>
+            </div>
+
+            <div class="pickup-card">
+                <span>📍</span>
+                <h3>Palayamkottai</h3>
+                <p>07:20 AM</p>
+            </div>
+
+            <div class="pickup-card">
+                <span>📍</span>
+                <h3>Vannarpettai</h3>
+                <p>07:25 AM</p>
+            </div>
+
+            <div class="pickup-card">
+                <span>📍</span>
+                <h3>Melapalayam</h3>
+                <p>07:10 AM</p>
+            </div>
+
+            <div class="pickup-card">
+                <span>📍</span>
+                <h3>Valliyur</h3>
+                <p>07:00 AM</p>
+            </div>
+
+            <div class="pickup-card">
+                <span>📍</span>
+                <h3>Nanguneri</h3>
+                <p>07:05 AM</p>
+            </div>
+
+            <div class="pickup-card">
+                <span>📍</span>
+                <h3>Ambasamudram</h3>
+                <p>06:40 AM</p>
+            </div>
+
+            <div class="pickup-card">
+                <span>📍</span>
+                <h3>Tenkasi</h3>
+                <p>06:35 AM</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= BUS TIMINGS ================= -->
+    <section id="timings" class="section">
+
+        <div class="section-heading">
+            <p>DAILY SCHEDULE</p>
+            <h2>Bus Timings</h2>
+            <span>Morning college transportation schedule</span>
+        </div>
+
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Bus No.</th>
+                        <th>Route</th>
+                        <th>Departure</th>
+                        <th>College Arrival</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>BUS 01</td>
+                        <td>Tirunelveli</td>
+                        <td>07:15 AM</td>
+                        <td>08:15 AM</td>
+                        <td><span class="status">Active</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>BUS 02</td>
+                        <td>Palayamkottai</td>
+                        <td>07:20 AM</td>
+                        <td>08:10 AM</td>
+                        <td><span class="status">Active</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>BUS 03</td>
+                        <td>Melapalayam</td>
+                        <td>07:10 AM</td>
+                        <td>08:05 AM</td>
+                        <td><span class="status">Active</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>BUS 04</td>
+                        <td>Valliyur</td>
+                        <td>06:45 AM</td>
+                        <td>08:20 AM</td>
+                        <td><span class="status">Active</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>BUS 05</td>
+                        <td>Ambasamudram</td>
+                        <td>06:40 AM</td>
+                        <td>08:15 AM</td>
+                        <td><span class="status">Active</span></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SEARCH / FILTER ================= -->
+    <section id="search" class="section search-section">
+
+        <div class="section-heading">
+            <p>FIND YOUR BUS</p>
+            <h2>Search & Filter</h2>
+            <span>Search by bus number, route or pickup point</span>
+        </div>
+
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search bus number, route or pickup point..."
+                onkeyup="searchBuses()"
+            >
+
+            <button onclick="searchBuses()">
+                🔍 Search
+            </button>
+
+        </div>
+
+
+        <div id="searchResult" class="search-result">
+            Enter a bus number, route or pickup point to search.
+        </div>
+
+    </section>
+
+
+    <!-- ================= INTERACTION MESSAGE ================= -->
+    <section class="interaction-section">
+
+        <div class="interaction-box">
+
+            <h2>Need Transport Information?</h2>
+
+            <p id="message">
+                Click the button to view a transport message.
+            </p>
+
+            <button onclick="showTransportMessage()">
+                Show Message
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+
+        <h3>🚌 College Transport Information Portal</h3>
+
+        <p>
+            A Web-Based Transportation Information System
+        </p>
+
+        <p>
+            Developed using HTML5, CSS3 and JavaScript
+        </p>
+
+        <div class="footer-line"></div>
+
+        <p>
+            © 2026 College Transport Portal | Academic Project
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+</html>
