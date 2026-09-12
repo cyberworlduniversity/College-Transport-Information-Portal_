@@ -1,0 +1,428 @@
+/* =========================================
+   COLLEGE TRANSPORT INFORMATION PORTAL
+   style.css
+   ========================================= */
+
+/* ---------- Basic Reset ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* ---------- Common Container ---------- */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ---------- Header ---------- */
+
+.header {
+    background: linear-gradient(135deg, #073b8c, #087f8c);
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+.header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.header p {
+    font-size: 16px;
+}
+
+/* ---------- Navigation ---------- */
+
+.navbar {
+    background: #062d66;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 16px 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background: #0aa6a6;
+    color: white;
+}
+
+/* ---------- Hero Section ---------- */
+
+.hero {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        #e8f4ff,
+        #dffafa
+    );
+    padding: 60px 15px;
+}
+
+.hero h2 {
+    color: #073b8c;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto 25px;
+    font-size: 18px;
+    color: #444;
+}
+
+/* ---------- Buttons ---------- */
+
+button {
+    background: #087f8c;
+    color: white;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #062d66;
+    transform: translateY(-2px);
+}
+
+/* ---------- Dashboard ---------- */
+
+.dashboard {
+    padding: 55px 0;
+    background: white;
+}
+
+.dashboard h2,
+.section h2 {
+    text-align: center;
+    color: #073b8c;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 25px 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #e1e7ef;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    color: #087f8c;
+    margin-bottom: 10px;
+}
+
+/* ---------- General Sections ---------- */
+
+.section {
+    padding: 55px 0;
+}
+
+.alternate {
+    background: #eaf5ff;
+}
+
+/* ---------- Tables ---------- */
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+th {
+    background: #073b8c;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+td {
+    padding: 13px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background: #eef8ff;
+}
+
+/* ---------- Pickup Points ---------- */
+
+.pickup-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.pickup-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    border-left: 5px solid #087f8c;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.pickup-card:hover {
+    transform: scale(1.03);
+}
+
+.pickup-card h3 {
+    color: #073b8c;
+    margin-bottom: 8px;
+}
+
+.pickup-card p {
+    color: #555;
+}
+
+/* ---------- Bus Timings ---------- */
+
+.timing-box {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.timing-box div {
+    background: white;
+    width: 300px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.timing-box h3 {
+    color: #087f8c;
+    margin-bottom: 10px;
+}
+
+.timing-box p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #073b8c;
+}
+
+/* ---------- Search Section ---------- */
+
+.search-section {
+    background: white;
+}
+
+#searchInput {
+    display: block;
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto 30px;
+    padding: 15px 18px;
+    border: 2px solid #087f8c;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+}
+
+#searchInput:focus {
+    border-color: #073b8c;
+    box-shadow: 0 0 8px rgba(7, 59, 140, 0.2);
+}
+
+/* ---------- Footer ---------- */
+
+.footer {
+    background: #062d66;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.footer h3 {
+    margin-bottom: 8px;
+}
+
+.footer p {
+    margin: 5px 0;
+    color: #dbe8ff;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+/* ---------- Tablets ---------- */
+
+@media (max-width: 900px) {
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pickup-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 25px 10px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .header p {
+        font-size: 14px;
+    }
+
+    .navbar .container {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+    }
+
+    .hero {
+        min-height: 350px;
+        padding: 40px 15px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .dashboard h2,
+    .section h2 {
+        font-size: 25px;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .pickup-container {
+        grid-template-columns: 1fr;
+    }
+
+    .timing-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .timing-box div {
+        width: 100%;
+    }
+
+    th,
+    td {
+        font-size: 14px;
+        padding: 10px;
+        white-space: nowrap;
+    }
+
+    #searchInput {
+        font-size: 14px;
+    }
+
+}
+
+/* ---------- Small Mobile ---------- */
+
+@media (max-width: 400px) {
+
+    .header h1 {
+        font-size: 21px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+}
