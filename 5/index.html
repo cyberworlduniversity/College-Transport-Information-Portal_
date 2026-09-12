@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>College Transport Information Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>College Transport Portal</h1>
+            <p>College Bus Information System</p>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#routes">Bus Routes</a>
+            <a href="#pickup">Pickup Points</a>
+            <a href="#timings">Bus Timings</a>
+            <a href="#search">Search</a>
+        </nav>
+    </header>
+
+
+    <!-- Home / Dashboard -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+            <h2>Welcome to College Transport Information Portal</h2>
+
+            <p>
+                Find college bus routes, pickup points, bus timings
+                and transportation information easily.
+            </p>
+
+            <button onclick="showTransportInfo()">
+                View Transport Information
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- Dashboard Statistics -->
+    <section class="dashboard">
+
+        <h2>Transport Dashboard</h2>
+
+        <div class="dashboard-container">
+
+            <div class="dashboard-card">
+                <h3>25</h3>
+                <p>Total Buses</p>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>25+</h3>
+                <p>Routes</p>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>100+</h3>
+                <p>Pickup Points</p>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>Daily</h3>
+                <p>Bus Service</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Bus Routes -->
+    <section id="routes" class="section">
+
+        <h2>Bus Routes</h2>
+
+        <div class="route-container">
+
+            <div class="route-card">
+                <h3>Bus 01</h3>
+                <p><strong>Route:</strong> Tirunelveli → College</p>
+                <p><strong>Departure:</strong> 7:15 AM</p>
+            </div>
+
+            <div class="route-card">
+                <h3>Bus 02</h3>
+                <p><strong>Route:</strong> Palayamkottai → College</p>
+                <p><strong>Departure:</strong> 7:20 AM</p>
+            </div>
+
+            <div class="route-card">
+                <h3>Bus 03</h3>
+                <p><strong>Route:</strong> Melapalayam → College</p>
+                <p><strong>Departure:</strong> 7:25 AM</p>
+            </div>
+
+            <div class="route-card">
+                <h3>Bus 04</h3>
+                <p><strong>Route:</strong> Pettai → College</p>
+                <p><strong>Departure:</strong> 7:30 AM</p>
+            </div>
+
+            <div class="route-card">
+                <h3>Bus 05</h3>
+                <p><strong>Route:</strong> Vannarpettai → College</p>
+                <p><strong>Departure:</strong> 7:35 AM</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Pickup Points -->
+    <section id="pickup" class="section">
+
+        <h2>Pickup Points</h2>
+
+        <div class="pickup-container">
+
+            <div class="pickup-card">
+                <h3>Pickup Point 1</h3>
+                <p>Tirunelveli Junction</p>
+            </div>
+
+            <div class="pickup-card">
+                <h3>Pickup Point 2</h3>
+                <p>Palayamkottai</p>
+            </div>
+
+            <div class="pickup-card">
+                <h3>Pickup Point 3</h3>
+                <p>Melapalayam</p>
+            </div>
+
+            <div class="pickup-card">
+                <h3>Pickup Point 4</h3>
+                <p>Pettai</p>
+            </div>
+
+            <div class="pickup-card">
+                <h3>Pickup Point 5</h3>
+                <p>Vannarpettai</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Bus Timings -->
+    <section id="timings" class="section">
+
+        <h2>Bus Timings</h2>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Bus No</th>
+                    <th>Route</th>
+                    <th>Morning</th>
+                    <th>Evening</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>01</td>
+                    <td>Tirunelveli</td>
+                    <td>7:15 AM</td>
+                    <td>4:30 PM</td>
+                </tr>
+
+                <tr>
+                    <td>02</td>
+                    <td>Palayamkottai</td>
+                    <td>7:20 AM</td>
+                    <td>4:35 PM</td>
+                </tr>
+
+                <tr>
+                    <td>03</td>
+                    <td>Melapalayam</td>
+                    <td>7:25 AM</td>
+                    <td>4:40 PM</td>
+                </tr>
+
+                <tr>
+                    <td>04</td>
+                    <td>Pettai</td>
+                    <td>7:30 AM</td>
+                    <td>4:45 PM</td>
+                </tr>
+
+                <tr>
+                    <td>05</td>
+                    <td>Vannarpettai</td>
+                    <td>7:35 AM</td>
+                    <td>4:50 PM</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+
+    <!-- Search / Filter -->
+    <section id="search" class="section search-section">
+
+        <h2>Search Bus Information</h2>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search bus number, route or pickup point..."
+            >
+
+            <button onclick="searchBus()">
+                Search
+            </button>
+
+        </div>
+
+        <div id="searchResult"></div>
+
+    </section>
+
+
+    <!-- JavaScript Message Area -->
+    <section id="message" class="message-section">
+
+        <h2 id="messageText"></h2>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>College Transport Information Portal</h3>
+
+        <p>
+            A Web-Based Transportation Information System
+        </p>
+
+        <p>
+            © 2026 College Transport Portal. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

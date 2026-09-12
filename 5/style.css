@@ -1,0 +1,466 @@
+/* =========================================
+   College Transport Information Portal
+   style.css
+   ========================================= */
+
+
+/* ---------- General Reset ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* ---------- Header ---------- */
+
+header {
+    background: linear-gradient(135deg, #0b1f3a, #075985);
+    color: white;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.logo h1 {
+    font-size: 25px;
+    margin-bottom: 3px;
+}
+
+.logo p {
+    font-size: 13px;
+    opacity: 0.85;
+}
+
+
+/* ---------- Navigation ---------- */
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 9px 13px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: white;
+    color: #075985;
+}
+
+
+/* ---------- Hero Section ---------- */
+
+.hero {
+    min-height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+
+    background:
+        linear-gradient(
+            rgba(4, 30, 66, 0.85),
+            rgba(4, 30, 66, 0.85)
+        ),
+        linear-gradient(135deg, #0ea5e9, #1e3a8a);
+}
+
+.hero-content {
+    max-width: 800px;
+    color: white;
+}
+
+.hero-content h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+/* ---------- Buttons ---------- */
+
+button {
+    border: none;
+    background: #f59e0b;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #d97706;
+    transform: translateY(-2px);
+}
+
+
+/* ---------- Dashboard ---------- */
+
+.dashboard {
+    padding: 60px 6%;
+    text-align: center;
+}
+
+.dashboard h2,
+.section h2 {
+    color: #0b1f3a;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.dashboard-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.dashboard-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-6px);
+}
+
+.dashboard-card h3 {
+    font-size: 30px;
+    color: #075985;
+    margin-bottom: 5px;
+}
+
+.dashboard-card p {
+    color: #555;
+}
+
+
+/* ---------- Common Section ---------- */
+
+.section {
+    padding: 60px 6%;
+    text-align: center;
+}
+
+.section:nth-child(even) {
+    background: #ffffff;
+}
+
+
+/* ---------- Route Cards ---------- */
+
+.route-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.route-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: left;
+    border-left: 5px solid #075985;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.route-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.route-card h3 {
+    color: #075985;
+    margin-bottom: 10px;
+}
+
+.route-card p {
+    color: #555;
+    margin: 5px 0;
+}
+
+
+/* ---------- Pickup Point Cards ---------- */
+
+.pickup-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.pickup-card {
+    background: #f8fafc;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.pickup-card:hover {
+    background: #e0f2fe;
+    transform: scale(1.03);
+}
+
+.pickup-card h3 {
+    color: #075985;
+    margin-bottom: 8px;
+}
+
+
+/* ---------- Bus Timings Table ---------- */
+
+table {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+th {
+    background: #075985;
+    color: white;
+    padding: 15px;
+}
+
+td {
+    padding: 13px;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background: #e0f2fe;
+}
+
+
+/* ---------- Search Section ---------- */
+
+.search-section {
+    background: #e0f2fe;
+}
+
+.search-box {
+    max-width: 750px;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 13px 15px;
+    border: 2px solid #bae6fd;
+    border-radius: 7px;
+    outline: none;
+    font-size: 15px;
+}
+
+.search-box input:focus {
+    border-color: #075985;
+}
+
+.search-box button {
+    background: #075985;
+}
+
+.search-box button:hover {
+    background: #0b1f3a;
+}
+
+
+/* ---------- Search Result ---------- */
+
+#searchResult {
+    max-width: 750px;
+    margin: 25px auto 0;
+    text-align: left;
+}
+
+.search-result-card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border-left: 4px solid #075985;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ---------- JavaScript Message ---------- */
+
+.message-section {
+    text-align: center;
+    padding: 20px;
+    min-height: 60px;
+}
+
+#messageText {
+    color: #075985;
+    font-size: 20px;
+}
+
+
+/* ---------- Footer ---------- */
+
+footer {
+    background: #0b1f3a;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+footer h3 {
+    margin-bottom: 8px;
+}
+
+footer p {
+    font-size: 14px;
+    opacity: 0.8;
+    margin: 4px 0;
+}
+
+
+/* =========================================
+   Responsive Design
+   ========================================= */
+
+
+/* ---------- Tablet ---------- */
+
+@media (max-width: 900px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .dashboard-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .route-container,
+    .pickup-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-content h2 {
+        font-size: 34px;
+    }
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 15px 4%;
+    }
+
+    .logo h1 {
+        font-size: 21px;
+    }
+
+    nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+    }
+
+    .hero {
+        min-height: 420px;
+        padding: 40px 20px;
+    }
+
+    .hero-content h2 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .dashboard,
+    .section {
+        padding: 45px 5%;
+    }
+
+    .dashboard-container,
+    .route-container,
+    .pickup-container {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard h2,
+    .section h2 {
+        font-size: 25px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box button {
+        width: 100%;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 9px 5px;
+    }
+}
