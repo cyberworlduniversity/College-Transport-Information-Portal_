@@ -1,0 +1,447 @@
+/* =========================================
+   COLLEGE TRANSPORT INFORMATION PORTAL
+   style.css
+   ========================================= */
+
+/* ---------- General Reset ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* ---------- Header ---------- */
+
+header {
+    background: linear-gradient(135deg, #063970, #0b63ce);
+    color: white;
+    padding: 20px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.logo h1 {
+    font-size: 26px;
+    margin-bottom: 3px;
+}
+
+.logo p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+
+/* ---------- Navigation ---------- */
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 9px 13px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+/* ---------- Hero Section ---------- */
+
+.hero {
+    min-height: 430px;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background:
+        linear-gradient(rgba(4, 47, 85, 0.85), rgba(0, 91, 170, 0.85)),
+        url("https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero h2 {
+    max-width: 850px;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 700px;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+
+/* ---------- Buttons ---------- */
+
+button {
+    border: none;
+    background: #0b63ce;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #063970;
+    transform: translateY(-2px);
+}
+
+
+/* ---------- Dashboard ---------- */
+
+.dashboard {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+    border-top: 4px solid #0b63ce;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.14);
+}
+
+.card h3 {
+    color: #063970;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #666;
+}
+
+
+/* ---------- Common Sections ---------- */
+
+.section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 35px 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+}
+
+.section h2 {
+    text-align: center;
+    color: #063970;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+
+/* ---------- Bus Cards ---------- */
+
+.bus-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.bus-card {
+    padding: 22px;
+    background: #eef6ff;
+    border-left: 5px solid #0b63ce;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.bus-card:hover {
+    transform: translateY(-5px);
+    background: #e3f0ff;
+}
+
+.bus-card h3 {
+    color: #063970;
+    margin-bottom: 8px;
+}
+
+.bus-card p {
+    color: #555;
+}
+
+
+/* ---------- Pickup Points ---------- */
+
+.pickup-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.pickup-list li {
+    background: #eef6ff;
+    padding: 14px;
+    border-radius: 7px;
+    border-left: 4px solid #0b63ce;
+    transition: 0.3s;
+}
+
+.pickup-list li:hover {
+    transform: translateX(5px);
+    background: #e3f0ff;
+}
+
+
+/* ---------- Timings Table ---------- */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+th {
+    background: #063970;
+    color: white;
+    padding: 14px;
+    text-align: center;
+}
+
+td {
+    padding: 13px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background: #f2f7fc;
+}
+
+tr:hover {
+    background: #e4f1ff;
+}
+
+
+/* ---------- Search ---------- */
+
+#searchInput {
+    width: 75%;
+    padding: 13px 15px;
+    border: 2px solid #d5dce5;
+    border-radius: 7px;
+    outline: none;
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+#searchInput:focus {
+    border-color: #0b63ce;
+}
+
+#searchResult {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 7px;
+    background: #f4f8fc;
+    min-height: 20px;
+}
+
+
+/* ---------- Footer ---------- */
+
+footer {
+    background: #063970;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
+}
+
+footer h3 {
+    margin-bottom: 8px;
+}
+
+footer p {
+    margin: 5px 0;
+    opacity: 0.9;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+
+/* ---------- Tablet ---------- */
+
+@media (max-width: 900px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .dashboard {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bus-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h2 {
+        font-size: 34px;
+    }
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 16px 15px;
+    }
+
+    .logo h1 {
+        font-size: 21px;
+    }
+
+    nav {
+        width: 100%;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .hero {
+        min-height: 380px;
+        padding: 60px 15px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .dashboard {
+        grid-template-columns: 1fr;
+        margin: 30px auto;
+    }
+
+    .bus-container {
+        grid-template-columns: 1fr;
+    }
+
+    .pickup-list {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        margin: 30px 12px;
+        padding: 25px 15px;
+    }
+
+    .section h2 {
+        font-size: 25px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 9px 5px;
+    }
+
+    #searchInput {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #search button {
+        width: 100%;
+    }
+}
+
+
+/* ---------- Small Mobile ---------- */
+
+@media (max-width: 400px) {
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .card {
+        padding: 20px 15px;
+    }
+
+    .section {
+        padding: 20px 12px;
+    }
+
+    table {
+        font-size: 11px;
+    }
+}
