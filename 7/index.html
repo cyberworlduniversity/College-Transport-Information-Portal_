@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="College Transport Information Portal - Bus Routes, Pickup Points and Timings">
+
+    <title>College Transport Portal</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS will be connected later -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER / NAVIGATION
+    ========================== -->
+
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    🚌
+                </div>
+
+                <div class="logo-text">
+                    <span>College</span>
+                    <strong>Transport</strong>
+                </div>
+            </a>
+
+            <nav class="navigation">
+
+                <a href="#home" class="nav-link active">
+                    Home
+                </a>
+
+                <a href="#routes" class="nav-link">
+                    Bus Routes
+                </a>
+
+                <a href="#pickup" class="nav-link">
+                    Pickup Points
+                </a>
+
+                <a href="#timings" class="nav-link">
+                    Timings
+                </a>
+
+                <a href="#search" class="nav-link">
+                    Search
+                </a>
+
+            </nav>
+
+            <button class="menu-btn" aria-label="Open Menu">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+             HERO / HOME SECTION
+        ========================== -->
+
+        <section id="home" class="hero">
+
+            <div class="hero-background"></div>
+
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+
+                    <div class="status-badge">
+                        <span class="status-dot"></span>
+                        College Transport Information System
+                    </div>
+
+                    <h1>
+                        Your Journey.
+                        <span>Our Responsibility.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Find college bus routes, pickup points and
+                        transportation timings quickly and easily
+                        through one smart portal.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#routes" class="primary-btn">
+                            Explore Bus Routes
+                            <span>→</span>
+                        </a>
+
+                        <a href="#search" class="secondary-btn">
+                            Search Transport
+                        </a>
+
+                    </div>
+
+                    <!-- Quick Statistics -->
+
+                    <div class="hero-stats">
+
+                        <div class="stat">
+                            <strong>25+</strong>
+                            <span>Bus Routes</span>
+                        </div>
+
+                        <div class="stat">
+                            <strong>100+</strong>
+                            <span>Pickup Points</span>
+                        </div>
+
+                        <div class="stat">
+                            <strong>Daily</strong>
+                            <span>Service</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Bus Visual Card -->
+
+                <div class="hero-visual">
+
+                    <div class="glow-circle"></div>
+
+                    <div class="bus-card">
+
+                        <div class="bus-card-top">
+
+                            <span class="live-indicator">
+                                ● LIVE
+                            </span>
+
+                            <span>
+                                Transport
+                            </span>
+
+                        </div>
+
+                        <div class="bus-illustration">
+
+                            <div class="bus">
+                                <div class="bus-front"></div>
+
+                                <div class="bus-window">
+                                    COLLEGE
+                                </div>
+
+                                <div class="bus-body">
+
+                                    <div class="bus-window-small"></div>
+                                    <div class="bus-window-small"></div>
+                                    <div class="bus-window-small"></div>
+
+                                </div>
+
+                                <div class="wheel wheel-left"></div>
+                                <div class="wheel wheel-right"></div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="route-preview">
+
+                            <div>
+                                <small>Next Bus</small>
+                                <strong>BUS 01</strong>
+                            </div>
+
+                            <div class="route-arrow">
+                                →
+                            </div>
+
+                            <div>
+                                <small>Departure</small>
+                                <strong>07:30 AM</strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             QUICK ACCESS
+        ========================== -->
+
+        <section class="quick-access">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>QUICK ACCESS</span>
+
+                    <h2>
+                        Everything You Need
+                    </h2>
+
+                    <p>
+                        Access college transportation information
+                        from one convenient dashboard.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-grid">
+
+                    <a href="#routes" class="feature-card">
+
+                        <div class="feature-icon">
+                            🚌
+                        </div>
+
+                        <div>
+                            <h3>Bus Routes</h3>
+                            <p>
+                                Explore available college bus routes.
+                            </p>
+                        </div>
+
+                        <span class="card-arrow">→</span>
+
+                    </a>
+
+
+                    <a href="#pickup" class="feature-card">
+
+                        <div class="feature-icon">
+                            📍
+                        </div>
+
+                        <div>
+                            <h3>Pickup Points</h3>
+                            <p>
+                                Find your nearest pickup location.
+                            </p>
+                        </div>
+
+                        <span class="card-arrow">→</span>
+
+                    </a>
+
+
+                    <a href="#timings" class="feature-card">
+
+                        <div class="feature-icon">
+                            ⏰
+                        </div>
+
+                        <div>
+                            <h3>Bus Timings</h3>
+                            <p>
+                                Check departure and arrival timings.
+                            </p>
+                        </div>
+
+                        <span class="card-arrow">→</span>
+
+                    </a>
+
+
+                    <a href="#search" class="feature-card">
+
+                        <div class="feature-icon">
+                            🔎
+                        </div>
+
+                        <div>
+                            <h3>Smart Search</h3>
+                            <p>
+                                Search buses and routes instantly.
+                            </p>
+                        </div>
+
+                        <span class="card-arrow">→</span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             BUS ROUTES SECTION
+        ========================== -->
+
+        <section id="routes" class="routes-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>TRANSPORT NETWORK</span>
+
+                    <h2>
+                        Popular Bus Routes
+                    </h2>
+
+                    <p>
+                        Quickly view the most commonly used
+                        college transportation routes.
+                    </p>
+
+                </div>
+
+
+                <div class="route-grid">
+
+                    <article class="route-card">
+
+                        <div class="route-number">
+                            01
+                        </div>
+
+                        <div class="route-info">
+
+                            <h3>Route 01</h3>
+
+                            <p>
+                                Central Bus Stand → College Campus
+                            </p>
+
+                            <div class="route-meta">
+                                <span>🕐 07:30 AM</span>
+                                <span>📍 8 Stops</span>
+                            </div>
+
+                        </div>
+
+                        <span class="route-status">
+                            Active
+                        </span>
+
+                    </article>
+
+
+                    <article class="route-card">
+
+                        <div class="route-number">
+                            02
+                        </div>
+
+                        <div class="route-info">
+
+                            <h3>Route 02</h3>
+
+                            <p>
+                                Railway Station → College Campus
+                            </p>
+
+                            <div class="route-meta">
+                                <span>🕐 07:15 AM</span>
+                                <span>📍 10 Stops</span>
+                            </div>
+
+                        </div>
+
+                        <span class="route-status">
+                            Active
+                        </span>
+
+                    </article>
+
+
+                    <article class="route-card">
+
+                        <div class="route-number">
+                            03
+                        </div>
+
+                        <div class="route-info">
+
+                            <h3>Route 03</h3>
+
+                            <p>
+                                Main Market → College Campus
+                            </p>
+
+                            <div class="route-meta">
+                                <span>🕐 07:45 AM</span>
+                                <span>📍 7 Stops</span>
+                            </div>
+
+                        </div>
+
+                        <span class="route-status">
+                            Active
+                        </span>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PICKUP POINTS
+        ========================== -->
+
+        <section id="pickup" class="pickup-section">
+
+            <div class="container pickup-grid">
+
+                <div class="pickup-content">
+
+                    <span class="section-label">
+                        PICKUP LOCATIONS
+                    </span>
+
+                    <h2>
+                        Find Your
+                        <span>Pickup Point</span>
+                    </h2>
+
+                    <p>
+                        Locate important pickup points and
+                        transportation stops around the college
+                        campus.
+                    </p>
+
+                    <a href="#search" class="primary-btn">
+                        Find a Pickup Point →
+                    </a>
+
+                </div>
+
+
+                <div class="pickup-list">
+
+                    <div class="pickup-item">
+                        <span class="pickup-icon">📍</span>
+                        <div>
+                            <strong>Main Bus Stand</strong>
+                            <small>Route 01 · Route 04</small>
+                        </div>
+                    </div>
+
+                    <div class="pickup-item">
+                        <span class="pickup-icon">📍</span>
+                        <div>
+                            <strong>Railway Station</strong>
+                            <small>Route 02 · Route 05</small>
+                        </div>
+                    </div>
+
+                    <div class="pickup-item">
+                        <span class="pickup-icon">📍</span>
+                        <div>
+                            <strong>Central Market</strong>
+                            <small>Route 03 · Route 06</small>
+                        </div>
+                    </div>
+
+                    <div class="pickup-item">
+                        <span class="pickup-icon">📍</span>
+                        <div>
+                            <strong>College Campus</strong>
+                            <small>All Routes</small>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             TIMINGS
+        ========================== -->
+
+        <section id="timings" class="timings-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>DAILY SCHEDULE</span>
+
+                    <h2>
+                        Bus Timings
+                    </h2>
+
+                    <p>
+                        Check scheduled departure and arrival
+                        times for college transportation.
+                    </p>
+
+                </div>
+
+
+                <div class="timeline">
+
+                    <div class="timeline-item">
+
+                        <div class="time">
+                            07:15
+                        </div>
+
+                        <div class="timeline-line"></div>
+
+                        <div class="timeline-content">
+
+                            <h3>Morning Pickup</h3>
+
+                            <p>
+                                First major pickup service begins.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="timeline-item">
+
+                        <div class="time">
+                            07:30
+                        </div>
+
+                        <div class="timeline-line"></div>
+
+                        <div class="timeline-content">
+
+                            <h3>Campus Arrival</h3>
+
+                            <p>
+                                Scheduled arrival at college campus.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="timeline-item">
+
+                        <div class="time">
+                            04:30
+                        </div>
+
+                        <div class="timeline-line"></div>
+
+                        <div class="timeline-content">
+
+                            <h3>Return Service</h3>
+
+                            <p>
+                                Evening buses depart from campus.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SEARCH SECTION
+        ========================== -->
+
+        <section id="search" class="search-section">
+
+            <div class="container">
+
+                <div class="search-box">
+
+                    <div class="search-content">
+
+                        <span class="section-label">
+                            SMART SEARCH
+                        </span>
+
+                        <h2>
+                            Find Your Bus
+                        </h2>
+
+                        <p>
+                            Search by bus number, route,
+                            pickup point or timing.
+                        </p>
+
+                    </div>
+
+
+                    <div class="search-form">
+
+                        <input
+                            type="text"
+                            id="searchInput"
+                            placeholder="Search bus, route, pickup point..."
+                            aria-label="Search transport information"
+                        >
+
+                        <button
+                            type="button"
+                            id="searchButton"
+                            class="search-btn"
+                        >
+                            🔎 Search
+                        </button>
+
+                    </div>
+
+                    <div
+                        id="searchResults"
+                        class="search-results"
+                    ></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+
+                <a href="#home" class="logo">
+
+                    <div class="logo-icon">
+                        🚌
+                    </div>
+
+                    <div class="logo-text">
+                        <span>College</span>
+                        <strong>Transport</strong>
+                    </div>
+
+                </a>
+
+                <p>
+                    A smart web-based transportation information
+                    system for college students and staff.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>Quick Links</h4>
+
+                <a href="#home">Home</a>
+                <a href="#routes">Bus Routes</a>
+                <a href="#pickup">Pickup Points</a>
+                <a href="#timings">Bus Timings</a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>Information</h4>
+
+                <a href="#search">Search Bus</a>
+                <a href="#routes">Transport Network</a>
+                <a href="#pickup">Pickup Locations</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    © 2026 College Transport Information Portal.
+                    All Rights Reserved.
+                </p>
+
+                <span>
+                    Developed for Fundamentals of Web Development
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript will be connected later -->
+    <script src="script.js"></script>
+
+</body>
+</html>
